@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="net.sonmoosans.u3.ui.component.UserItem">
+  <grid id="27dc6" binding="Main" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <maximumSize width="2147483647" height="70"/>
+      <minimumSize width="158" height="70"/>
+      <preferredSize width="158" height="70"/>
+    </properties>
+    <border type="empty">
+      <size top="8" left="8" bottom="8" right="8"/>
+    </border>
+    <children>
+      <component id="78e27" class="javax.swing.JLabel" binding="iconHolder">
+        <constraints border-constraint="West"/>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <grid id="b8c7d" binding="contextPane" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-12960965"/>
+        </properties>
+        <border type="empty">
+          <size top="0" left="4" bottom="0" right="0"/>
+        </border>
+        <children>
+          <component id="d2890" class="javax.swing.JLabel" binding="nameLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22" style="1"/>
+              <text value="User"/>
+            </properties>
+          </component>
+          <component id="9216c" class="javax.swing.JButton" binding="tagButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Tag"/>
+              <visible value="false"/>
+            </properties>
+          </component>
+          <component id="5daf3" class="javax.swing.JLabel" binding="idLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="ID: "/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

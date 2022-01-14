@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="net.sonmoosans.u3.ui.panel.chat.GroupAudioPanel">
+  <grid id="27dc6" binding="Main" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="92a31">
+        <constraints>
+          <grid row="0" column="0" row-span="3" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="empty"/>
+        <children>
+          <grid id="3c910" binding="memberContainer" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints/>
+            <properties>
+              <minimumSize width="200" height="24"/>
+              <preferredSize width="200" height="24"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </scrollpane>
+      <component id="1d644" class="javax.swing.JButton" binding="joinButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16744970"/>
+          <foreground color="-789516"/>
+          <text value="Audio Call"/>
+        </properties>
+      </component>
+      <grid id="7eb0e" binding="joinedPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <visible value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="dfac7" class="javax.swing.JButton" binding="leaveButton" default-binding="true">
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-589056"/>
+              <font style="1"/>
+              <foreground color="-197379"/>
+              <text value="Leave"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="3e03d" class="javax.swing.JCheckBox" binding="speakCheckBox">
+            <constraints border-constraint="South"/>
+            <properties>
+              <text value="Open Microphone"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <vspacer id="a2adc">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>

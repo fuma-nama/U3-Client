@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="OpenGraph">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/OpenGraph.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

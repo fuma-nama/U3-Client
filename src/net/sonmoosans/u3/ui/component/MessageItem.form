@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="net.sonmoosans.u3.ui.component.MessageItem">
+  <grid id="27dc6" binding="Main" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="545" height="400"/>
+    </constraints>
+    <properties>
+      <inheritsPopupMenu value="true"/>
+    </properties>
+    <border type="empty">
+      <size top="10" left="5" bottom="5" right="5"/>
+    </border>
+    <children>
+      <grid id="a769d" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="9b54c" binding="replyContainer" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <visible value="false"/>
+            </properties>
+            <border type="empty">
+              <size top="5" left="5" bottom="0" right="5"/>
+            </border>
+            <children>
+              <component id="d0479" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <text value="Reply To"/>
+                </properties>
+              </component>
+              <component id="bbd91" class="javax.swing.JLabel" binding="replyNameLabel">
+                <constraints/>
+                <properties>
+                  <enabled value="true"/>
+                  <font size="14" style="1"/>
+                  <foreground color="-6908265"/>
+                  <text value="User"/>
+                </properties>
+                <clientProperties>
+                  <html.disable class="java.lang.Boolean" value="true"/>
+                </clientProperties>
+              </component>
+              <component id="46687" class="javax.swing.JLabel" binding="replyTextLabel">
+                <constraints/>
+                <properties>
+                  <font size="12" style="1"/>
+                  <foreground color="-6908265"/>
+                  <text value="context"/>
+                </properties>
+                <clientProperties>
+                  <html.disable class="java.lang.Boolean" value="true"/>
+                </clientProperties>
+              </component>
+            </children>
+          </grid>
+          <component id="db595" class="javax.swing.JLabel" binding="newMessageLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="18" style="1"/>
+              <foreground color="-46264"/>
+              <text value="---New Messages---"/>
+              <visible value="false"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="fdfa4" binding="contextPane" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties>
+          <inheritsPopupMenu value="true"/>
+        </properties>
+        <border type="empty">
+          <size top="0" left="4" bottom="0" right="0"/>
+        </border>
+        <children>
+          <grid id="7b307" binding="userPane" layout-manager="FlowLayout" hgap="0" vgap="0" flow-align="0">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="61812" class="javax.swing.JLabel" binding="nameLabel">
+                <constraints/>
+                <properties>
+                  <font size="20" style="1"/>
+                  <text value="User"/>
+                </properties>
+                <clientProperties>
+                  <html.disable class="java.lang.Boolean" value="true"/>
+                </clientProperties>
+              </component>
+              <component id="ae5ea" class="javax.swing.JLabel" binding="dateLabel">
+                <constraints/>
+                <properties>
+                  <text value="Date"/>
+                </properties>
+              </component>
+              <component id="974d5" class="javax.swing.JLabel" binding="editedLabel">
+                <constraints/>
+                <properties>
+                  <font size="11" style="1"/>
+                  <foreground color="-5987163"/>
+                  <text value="  (Edited)"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <toolbar id="9070e" binding="optionBar">
+                <constraints/>
+                <properties>
+                  <floatable value="false"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                </properties>
+                <border type="empty">
+                  <size top="0" left="10" bottom="0" right="0"/>
+                </border>
+                <children>
+                  <component id="9837c" class="javax.swing.JButton" binding="editButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Edit"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                  <component id="bee15" class="javax.swing.JButton" binding="moreButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="More"/>
+                    </properties>
+                  </component>
+                  <component id="c5255" class="javax.swing.JButton" binding="htmlTag">
+                    <constraints/>
+                    <properties>
+                      <background color="-16750385"/>
+                      <contentAreaFilled value="true"/>
+                      <font style="1"/>
+                      <foreground color="-1644825"/>
+                      <iconTextGap value="0"/>
+                      <text value="HTML"/>
+                    </properties>
+                  </component>
+                </children>
+              </toolbar>
+            </children>
+          </grid>
+          <component id="4e5dd" class="javax.swing.JEditorPane" binding="textPane">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <contentType value="text/html"/>
+              <editable value="false"/>
+              <enabled value="true"/>
+              <focusable value="true"/>
+              <font size="14"/>
+              <inheritsPopupMenu value="true"/>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <opaque value="true"/>
+            </properties>
+          </component>
+          <scrollpane id="929ac" binding="editPane">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <visible value="false"/>
+            </properties>
+            <border type="empty"/>
+            <children>
+              <component id="a78bd" class="javax.swing.JTextArea" binding="editArea">
+                <constraints/>
+                <properties>
+                  <visible value="true"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <grid id="a5160" binding="bottomBar" layout-manager="FlowLayout" hgap="10" vgap="10" flow-align="0">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </grid>
+      <component id="710aa" class="javax.swing.JLabel" binding="iconHolder">
+        <constraints border-constraint="West"/>
+        <properties>
+          <text value=""/>
+          <verticalAlignment value="1"/>
+          <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
