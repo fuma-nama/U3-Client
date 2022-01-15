@@ -73,6 +73,7 @@ public class ChatScreen {
 
         LoadingScreen.loadClient(token -> {
             JFrame frame = new JFrame("Untitled 3 V1");
+            frame.setIconImage(Toolkit.getDefaultToolkit().getImage("icon.png"));
             Application.setAppFrame(frame);
             ChatScreen screen = new ChatScreen(frame);
             Application.setChatScreen(screen);
