@@ -24,7 +24,7 @@ public class EmojiLibraryDialog extends JDialog {
     private JScrollPane scrollPane;
     private Supplier<Result<Emoji[]>> fetchMethod;
     private int emojiCount = 0;
-    private boolean canFetch = false;
+    private boolean canFetch = false, isEnded = false;
 
     public EmojiLibraryDialog(JFrame frame) {
         super(frame, "Emoji Library");
@@ -59,7 +59,7 @@ public class EmojiLibraryDialog extends JDialog {
         itemContainer.setLayout(new WrapLayout(FlowLayout.LEFT));
 
         scrollPane.getVerticalScrollBar().addAdjustmentListener(e-> {
-            if(!e.getValueIsAdjusting()) {
+            if (!e.getValueIsAdjusting()) {
                 JScrollBar scrollBar = (JScrollBar) e.getAdjustable();
                 int extent = scrollBar.getModel().getExtent();
                 int maximum = scrollBar.getModel().getMaximum();
@@ -69,10 +69,13 @@ public class EmojiLibraryDialog extends JDialog {
             }
         });
 
+        scrollPane.getVerticalScrollBar().setUnitIncrement(16);
+
         updateEmojis();
     }
 
     protected void updateEmojis() {
+        isEnded = false;
         canFetch = false;
         emojiCount = 0;
 
@@ -93,19 +96,27 @@ public class EmojiLibraryDialog extends JDialog {
     }
 
     protected void fetchMoreData() {
-        if (canFetch && fetchMethod != null) {
+        if (canFetch && fetchMethod != null && !isEnded) {
             canFetch = false;
             fetchEmojis();
         }
     }
 
     protected void fetchEmojis() {
-        runAsync(fetchMethod, emojis-> {
-            if (emojis.isSuccess())
-                for (Emoji emoji : emojis.context()) {
+        System.out.println("E" + emojiCount);
+
+        runAsync(fetchMethod, result-> {
+            if (result.isSuccess()) {
+                Emoji[] emojis = result.context();
+
+                for (Emoji emoji : emojis) {
                     emojiCount++;
                     itemContainer.add(new EmojiItem(emoji).getPanel());
                 }
+
+                isEnded = emojis.length <= 0;
+            }
+
             repaintContainer(itemContainer);
             canFetch = true;
         });
