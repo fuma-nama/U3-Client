@@ -68,6 +68,9 @@
               <font name="Corbel" size="22" style="1"/>
               <text value="Group"/>
             </properties>
+            <clientProperties>
+              <html.disable class="java.lang.Boolean" value="true"/>
+            </clientProperties>
           </component>
           <component id="87ec5" class="javax.swing.JLabel" binding="memberLabel">
             <constraints>
@@ -103,6 +106,9 @@
             <properties>
               <text value="Description"/>
             </properties>
+            <clientProperties>
+              <html.disable class="java.lang.Boolean" value="true"/>
+            </clientProperties>
           </component>
           <component id="ce330" class="javax.swing.JButton" binding="buttonEdit">
             <constraints>

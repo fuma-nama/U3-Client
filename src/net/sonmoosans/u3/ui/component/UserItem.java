@@ -1,7 +1,9 @@
 package net.sonmoosans.u3.ui.component;
 
 import com.formdev.flatlaf.FlatLaf;
+import net.sonmoosans.u3.api.Memory;
 import net.sonmoosans.u3.api.model.UserProfile;
+import net.sonmoosans.u3.ui.popup.UserDetailPopup;
 import net.sonmoosans.u3.ui.util.CommonUtil;
 
 import javax.annotation.Nullable;
@@ -31,6 +33,10 @@ public class UserItem extends ItemPane {
             tagButton.setText(tag);
             tagButton.setVisible(true);
         }
+
+        if (user.userID != Memory.getSelfUserID())
+            Main.setComponentPopupMenu(new UserDetailPopup(user));
+
         init();
     }
 

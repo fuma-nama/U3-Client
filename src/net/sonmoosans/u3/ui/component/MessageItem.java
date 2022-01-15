@@ -84,7 +84,7 @@ public abstract class MessageItem extends ItemPane {
         nameLabel.setText(user.name);
         setIconAsync(iconHolder, user.avatar);
 
-        iconHolder.setComponentPopupMenu(new UserDetailPopup(message.senderID, user));
+        iconHolder.setComponentPopupMenu(new UserDetailPopup(user));
 
         canModifyMessage = message.senderID == Memory.getSelfUserID();
 

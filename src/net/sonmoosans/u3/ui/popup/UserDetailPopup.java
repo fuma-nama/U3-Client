@@ -19,7 +19,9 @@ public class UserDetailPopup extends JPopupMenu {
     private JButton addFriendButton;
     private JLabel idLabel;
 
-    public UserDetailPopup(int userID, UserProfile user) {
+    public UserDetailPopup(UserProfile user) {
+        int userID = user.userID;
+
         setIconAsync(avatarHolder, user.avatar);
         nameLabel.setText(user.name);
         idLabel.setText("ID: " + userID);

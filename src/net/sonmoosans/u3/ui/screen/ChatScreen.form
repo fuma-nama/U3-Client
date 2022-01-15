@@ -15,7 +15,9 @@
       </grid>
       <grid id="391f3" layout-manager="BorderLayout" hgap="0" vgap="0">
         <constraints border-constraint="West"/>
-        <properties/>
+        <properties>
+          <maximumSize width="314" height="2147483647"/>
+        </properties>
         <border type="none"/>
         <children>
           <grid id="f4541" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">

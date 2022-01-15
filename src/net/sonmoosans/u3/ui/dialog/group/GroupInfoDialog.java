@@ -70,7 +70,7 @@ public class GroupInfoDialog extends JDialog {
         contentPane.registerKeyboardAction(e -> dispose(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
         memberContainer.setLayout(new BoxLayout(memberContainer, BoxLayout.PAGE_AXIS));
-        setPreferredSize(new Dimension(400, 600));
+        setMinimumSize(new Dimension(400, 600));
 
         this.updateMembers();
     }
