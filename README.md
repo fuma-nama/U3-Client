@@ -17,3 +17,5 @@ A Small Java Chat App GUI Client using Swing
 
 - Kick/Ban group members
 - User self description
+
+**Note**: I have stopped to maintaining this project already
