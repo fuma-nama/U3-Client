@@ -9,7 +9,7 @@ A Small Java Chat App GUI Client using Swing
 3. Upload or use custom emojis (Emoji Library)
 4. Group and private chat system
 5. Friends system
-6. Small login/signup system
+6. Small login/signup system (Not very safe actually)
 7. Change app UI themes
 8. Edit/Remove messages
 
