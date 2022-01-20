@@ -18,4 +18,6 @@ A Small Java Chat App GUI Client using Swing
 - Kick/Ban group members
 - User self description
 
+**Server-side Project: ** https://github.com/SonMooSans/U3-Server
+
 **Note**: I have stopped to maintaining this project already
