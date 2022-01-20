@@ -12,6 +12,7 @@ A Small Java Chat App GUI Client using Swing
 6. Small login/signup system (Not very safe actually)
 7. Change app UI themes
 8. Edit/Remove messages
+9. Visit message links info
 
 ### Missing features
 
