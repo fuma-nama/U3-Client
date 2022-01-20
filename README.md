@@ -4,7 +4,7 @@ A Small Java Chat App GUI Client using Swing
 
 ### Supported Features
 
-1. Realtime messaging
+1. Realtime messaging and notification
 2. Send text, files, emojis or even html, also support markdown
 3. Upload or use custom emojis (Emoji Library)
 4. Group and private chat system
